@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mitratech-assessment",
+  "private_key_id": "674b2feeabba8d8d18e8bcb6fa0e80fd68691bf2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDvP9zD9XP77NTl\nXzHrpF8KdaL2lIT7ZRbn7FvHtp3JKitbwooow3SiasCcrkF2nvKqlYPTEWxx2o+0\n0cJiRWy9PUNE3r+ye1Jsb6QlgVm9d80QJNhV8c0+xb4PNbaaNvI8llDb3udGDXrC\nW801jjohVyWawSOObFdTfuY1q1vwdpAkd4OjS+zfdg5ZPxfzC2e79juaTzI8XJge\nefuK/p76LnDmTUolAWWt8LE6McqkjpPXqz4iq1ffCfM/UvV04LcCBiO4SN4+wjsW\nA3r/GxURNWs0S/SrkdmSGMLt6BmBFud8ocOgJUkDEppSZoraUR1k/bMoPJoXEpn/\nSg24jOfNAgMBAAECggEALc9AEaNbYGbiAsM99z0jV4jbubQJXGtoPeMTVcOhJaX1\n5F10/8Yg/IJNPBLfhPt9Qm1bbtwctBYhwwEQ46kgX4Gt8i9mbCHRz+J2fxnr2Wvp\nb0hmxdoFLxpEwHvL6W5Q5onvlJHzHYYyNanHOpRvi/e4Qw/tI3WaKOoY4Tjc40cp\nkm6qFMoI7750bSDRXfHF3zBYDT0RHnBOSoPnYgjripZCsxrSVjPHgwg8GOyWNbIk\naircEL6h2B4YrmxPm9cSjUr0iNzQcm4OlYBRa6aNdClTNY5i9nfo9/D4pNh2qLlT\npmT0FVjWNB/vWg0EvM3YQ+i191JEuGmc0EF2Mg/N7wKBgQD/rebDSxVIwU2upNQQ\nQbBW3+DpL4070XsCFxh+wPwTbwAnsdhFHrqP/2FIq9oybETYxlUWdlPpHzAXjlH4\n0gDwGjis70FW819pBhT+xQW/l209e3C8IBRwIARFYbEjO+7nTmQ/j5UY5MYEdNDW\n0KPfkWxQSGJbAttTQQjX3xurOwKBgQDvjK9xs0Uuqhl6Tka6EorhBT9vQH6xlb6y\nJ7EX+CkhuW792NDqmt0naVhlGEdaUWTu2VSj+88aJvfh0kxWM/tMx1BpDIyQ+D4H\nAFEVijVMxTf1HLdtXZnNC6tFdZaE+v1A2MdvrZmxl9WZFDiMEOMBq1u8C716+N87\nXLkOXPI4lwKBgQDo+Uftqgvx6JnlSjIlwgVxk7x4Hqk92YqRhAQA88590sY8ZVRg\n3zg2IAlAU7+V9IvjTw2XUyjwokeLH1bYOFs8bVg5VCWgmlDU/QLChzrOsqeKv2Eh\nOsYEyVe69OKY7XKqeAbm1+mO7l71DpCBPUolXHhqyxo8PeUl/nuVYKnwowKBgBFG\nPeifGuAQmCG/v03vxGARts9ZAUnhGI1UW2r1FFJAQwa/OeGRJV2QNTWlGJAkyniG\n55mjsP2bzchVF/gna3nP7baFlyVlIWPz2+UHwGw21KAyX+/dDhhBPSqXHjGcv+KL\nP2aISEsMPfT6BlHjbdtS9hyLZDCX/dEUEKw+e6ElAoGBAKMJ6O9JrfLtM4fLMlDW\n5o3s/Lj2m7S8YeZsU1o7blF09udKFN9O6yDbHjWeDCyZh0D0af9Jw2wMkHbtnsbc\nOlukpIlPqFKl77+uFIwZnRZyZBDighp/BMGip2D1PQuiqoyvmNCFjzBCoy21GKFw\nliVTgZtwoP8DivvxsdNxf86/\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-78xu9@mitratech-assessment.iam.gserviceaccount.com",
+  "client_id": "102388367933648679178",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-78xu9%40mitratech-assessment.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
