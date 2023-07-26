@@ -78,8 +78,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
-
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
