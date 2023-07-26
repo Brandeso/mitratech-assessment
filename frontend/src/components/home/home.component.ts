@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,35 @@ import { Router } from '@angular/router';
 
 export class HomeComponent implements OnInit {
 
+  isSticky = true;
+
   constructor(
     private router: Router
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {}
 
+  message(txt: string) {
+    console.log(txt);
   }
+
+  goTo(route: string) {
+    switch(route) {
+      case 'we-are':
+        this.router.navigate(['we-are']);
+        break;
+      case 'login':
+        this.router.navigate(['login']);
+        break;
+      case 'why-us':
+        this.router.navigate(['why-us']);
+        break;
+      case 'about-us':
+        this.router.navigate(['about-us']);
+        break;
+      default:
+        break;
+    }
+  }
+
 }

@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 //Angular Material Components
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -36,19 +36,11 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { HomeComponent } from 'src/components/home/home.component';
 
-import { AppRoutingModule } from './app-routing.module';
 
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCheckboxModule,
+const materialComponents = [
+  MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
     MatInputModule,
@@ -79,8 +71,21 @@ import { AppRoutingModule } from './app-routing.module';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+]
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeComponent
+  ],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    ...materialComponents
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [...materialComponents]
 })
 export class AppModule { }
