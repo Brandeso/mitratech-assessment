@@ -37,6 +37,10 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { HomeComponent } from 'src/components/home/home.component';
+import { ProductsComponent } from 'src/components/products/products.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsService } from 'src/services/products.service';
+import { DecimalPipe } from '@angular/common';
 
 
 const materialComponents = [
@@ -76,15 +80,20 @@ const materialComponents = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ...materialComponents
   ],
-  providers: [],
+  providers: [
+    DecimalPipe,
+    ProductsService
+  ],
   bootstrap: [AppComponent],
   exports: [...materialComponents]
 })
