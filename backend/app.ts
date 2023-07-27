@@ -63,7 +63,7 @@ app.put('/products/:id', async(req: Request, res: Response) => {
         name, desc, price
       });
 
-      res.status(200).send({ msg: "Ok", });
+      res.status(200).send({ msg: "Ok", snapshot});
     } else {
       res.status(403).send({ msg: validation.msg })
     }

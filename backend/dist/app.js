@@ -69,7 +69,7 @@ app.put('/products/:id', (req, res) => __awaiter(void 0, void 0, void 0, functio
             const snapshot = yield _db.collection('products').doc(id).set({
                 name, desc, price
             });
-            res.status(200).send({ msg: "Ok", });
+            res.status(200).send({ msg: "Ok", snapshot });
         }
         else {
             res.status(403).send({ msg: validation.msg });
