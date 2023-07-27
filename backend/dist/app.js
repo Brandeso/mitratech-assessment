@@ -19,7 +19,13 @@ const db_1 = require("./src/db");
 const _db = db_1.db;
 const app = (0, express_1.default)();
 const port = 3000;
+const cors = require("cors");
 app.use(express_1.default.json());
+app.use(cors({
+    origin: true,
+    credentials: true,
+    methods: 'GET,POST,PUT,DELETE'
+}));
 app.get('/', (req, res) => {
     res.status(200).send("Hello World!");
 });
