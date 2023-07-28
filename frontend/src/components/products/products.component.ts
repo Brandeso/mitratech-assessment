@@ -31,8 +31,9 @@ export class ProductsComponent implements OnInit {
   isLoading = false;
   productForm = false;
   datasource = new MatTableDataSource<productInterface>(productsData);
+  currentEditProduct: any = {}
 
-  displayedColumns: string[] = ["position", "name", "description", "price"];
+  displayedColumns: string[] = ["position", "name", "description", "price", "options"];
 
   constructor(
     private router: Router,
@@ -54,6 +55,21 @@ export class ProductsComponent implements OnInit {
        })
        this.datasource.data = productData;
     })
+  }
+
+  close(event: any) {
+    this.productForm = false;
+    this.currentEditProduct = {};
+    this.getProducts()
+  }
+
+  openForm(element:productInterface) {
+    this.productForm = true;
+    this.currentEditProduct = element;
+  }
+
+  delete(element:productInterface) {
+
   }
 
   applyFilter(event: Event) {

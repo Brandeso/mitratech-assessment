@@ -1,0 +1,31 @@
+<div class="main-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        {{title}} product.
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content style="padding-top: 1vh;">
+      <form [formGroup]="productForm" class="product-form">
+        <mat-form-field>
+          <mat-label>Product Name</mat-label>
+          <input matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Description" formControlName="desc">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Price (USD)</mat-label>
+          <input matInput type="number" placeholder="Price" formControlName="price">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions style="display: flex;justify-content: end;">
+      <button mat-raised-button (click)="cancel()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="saveOrUpdate()" [disabled]="productForm.invalid">
+        Save
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

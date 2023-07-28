@@ -1,8 +1,8 @@
 .main-container {
-  padding-top: 1vh;
+  padding: 1vh 1vw 1vh 1vw;
   background-color: aliceblue;
   height: 90vh;
-  display: flex;
+  // display: flex;
   justify-content: space-around;
   .container {
     display: flex;
@@ -12,4 +12,9 @@
 
 .spacer {
   flex: 1 1 auto;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
 }

@@ -41,6 +41,8 @@ import { ProductsComponent } from 'src/components/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsService } from 'src/services/products.service';
 import { DecimalPipe } from '@angular/common';
+import { ProductFormComponent } from 'src/components/products/products-form/products-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const materialComponents = [
@@ -81,13 +83,15 @@ const materialComponents = [
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductFormComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     ...materialComponents
   ],
   providers: [
