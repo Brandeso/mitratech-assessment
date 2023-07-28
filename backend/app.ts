@@ -79,7 +79,7 @@ app.put('/products/:id', async(req: Request, res: Response) => {
   }
 });
 
-app.delete('/products', async(req: Request, res: Response) => {
+app.delete('/products/:id', async(req: Request, res: Response) => {
   console.log('----- DELETE -----');
   try {
     res.status(200).send({ msg: "Ok", todo: 'MISSING IMPLEMENTATION!'});

@@ -85,7 +85,7 @@ app.put('/products/:id', (req, res) => __awaiter(void 0, void 0, void 0, functio
         res.status(500).send({ msg: "Whoops! Something died", error });
     }
 }));
-app.delete('/products', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.delete('/products/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     console.log('----- DELETE -----');
     try {
         res.status(200).send({ msg: "Ok", todo: 'MISSING IMPLEMENTATION!' });
