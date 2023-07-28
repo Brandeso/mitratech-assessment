@@ -88,7 +88,9 @@ app.put('/products/:id', (req, res) => __awaiter(void 0, void 0, void 0, functio
 app.delete('/products/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     console.log('----- DELETE -----');
     try {
-        res.status(200).send({ msg: "Ok", todo: 'MISSING IMPLEMENTATION!' });
+        const { id } = req.params;
+        const snapshot = yield _db.collection('products').doc(id).delete();
+        res.status(200).send({ msg: "Ok", snapshot });
     }
     catch (error) {
         res.status(500).send({ msg: "Whoops! Something died", error });

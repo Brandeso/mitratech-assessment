@@ -1,6 +1,6 @@
 # Mitratech Technical Assessment
 
-> By Bruno Amezcua (Last updated 26/07/23)
+> By Bruno Amezcua (Last updated 28/07/23)
 
 ## Backend
 

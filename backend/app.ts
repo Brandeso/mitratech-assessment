@@ -82,7 +82,9 @@ app.put('/products/:id', async(req: Request, res: Response) => {
 app.delete('/products/:id', async(req: Request, res: Response) => {
   console.log('----- DELETE -----');
   try {
-    res.status(200).send({ msg: "Ok", todo: 'MISSING IMPLEMENTATION!'});
+    const { id } = req.params;
+    const snapshot = await _db.collection('products').doc(id).delete();
+    res.status(200).send({ msg: "Ok", snapshot});
   } catch(error) {
     res.status(500).send({ msg: "Whoops! Something died", error})
   }
