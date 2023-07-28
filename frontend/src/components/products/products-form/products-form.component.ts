@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { ProductsService } from "src/services/products.service";
 import { productInterface } from "../products.component";
+import { ProductModel } from "src/models/product.model";
 
 @Component({
   selector: 'app-product-form',
@@ -74,5 +75,22 @@ export class ProductFormComponent implements OnInit {
 
   saveOrUpdate() {
     console.log(this.productForm.value)
+    const productModel = new ProductModel()
+    if(this.product.id != undefined) {
+      productModel.id = this.product.id;
+      productModel.desc = this.productForm.value.desc!;
+      productModel.name = this.productForm.value.name!;
+      productModel.price = this.productForm.value.price!;
+      this.productService.editProduct(productModel).subscribe({
+        complete: () => { this.refreshForm() }
+      })
+    } else {
+      productModel.desc = this.productForm.value.desc!;
+      productModel.name = this.productForm.value.name!;
+      productModel.price = this.productForm.value.price!;
+      this.productService.addProduct(productModel).subscribe({
+        complete: () => { this.refreshForm() }
+      })
+    }
   }
 }

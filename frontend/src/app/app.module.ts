@@ -84,7 +84,7 @@ const materialComponents = [
     AppComponent,
     HomeComponent,
     ProductsComponent,
-    ProductFormComponent
+    ProductFormComponent,
   ],
   imports: [
     AppRoutingModule,

@@ -32,6 +32,6 @@ export class ProductsService {
   }
 
   public deleteProduct(product: productInterface) {
-    this.http.delete(environment.apiUrl + 'products/' + product.id)
+    return this.http.delete(environment.apiUrl + 'products/' + product.id)
   }
 }
